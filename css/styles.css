@@ -42,3 +42,9 @@ h2{
 .computer{
   width:3vw;
 }
+
+.middle-container{
+  margin: auto;
+  width:40%;
+  line-height: 2;
+}
