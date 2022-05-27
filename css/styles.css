@@ -30,6 +30,7 @@ h2{
 }
 
 .background {
+  width: 100%;
   max-width: 115vw;
   max-height: 115vh;
   position: absolute;
