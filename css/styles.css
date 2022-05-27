@@ -1,0 +1,43 @@
+body {
+  margin: auto;
+  text-align: center;
+  font-family: "work sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h1 {
+  font-family: "Lobster", sans-serif;
+  margin-top: 0;
+  padding-left: 4;
+  font-size: 5.6rem;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+.intro{
+  height: 115vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.selfie {
+  height: 15vw;
+}
+
+.background {
+  max-width: 115vw;
+  max-height: 115vh;
+  position: absolute;
+  left:0;
+  top: 0;
+  z-index: -1;
+}
+
+.computer{
+  width:3vw;
+}
