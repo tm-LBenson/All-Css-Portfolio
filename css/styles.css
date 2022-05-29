@@ -38,6 +38,11 @@ h2 {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .header__logo-box {
@@ -70,25 +75,15 @@ h2 {
 }
 
 .header__self-box {
-  position: absolute;
-  top: 30;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 25vh
 }
 
 .header__selfie {
-  margin-top: 15rem;
-  height: 25rem;
-  padding: 0;
-  transform: translateX(50%, -100%);
+  height: 100%;
 }
 
 .header__intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  height: 25vh;
 }
 
 .profile-box {
