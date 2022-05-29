@@ -1,102 +1,162 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
   padding: 0;
-
 }
 
-h1 {
-  font-family: "Lobster", sans-serif;
-  font-size: 4.3rem;
+html {
+  font-size: 62.5%;
+}
 
+body {
+  background-image: linear-gradient(to bottom right, rgba(133, 147, 131, 0.713), rgba(18, 129, 10, 0.713));
+  width: 100%;
+  text-align: left;
+  font-family: "work sans", sans-serif;
+  font-size: 2.5rem;
+  box-sizing: border-box;
 }
 
 h2 {
   font-size: 2.3rem;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
-}
-
-
-body {
-
-  text-align: left;
-  font-family: "work sans", sans-serif;
-  font-size: 25px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-
-}
-
-
-.logo {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-
-.computer {
-  height: 90px;
 
 }
 
 
 
 
-img.selfie {
-  margin-top: 30px;
-  width: 25%;
-  padding: 20px;
-}
 
-
-section {
-  height: 100vh;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  justify-content: center;
-  margin: auto;
-}
-
-.intro {
-  color: aliceblue;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  width: 100%;
-  justify-content: center;
-  padding-bottom: 20px;
-}
-
-.first-section {
-  padding-top: 10%;
+.header {
+  height: 95vh;
   background-image:
     linear-gradient(to right bottom, rgba(115, 117, 131, 0.442), rgba(42, 14, 127, 0.401)),
     url("grassyhill.jpg");
   background-size: cover;
   background-position: top;
-  height: 100%;
-  width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
 }
 
+.header__logo-box {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
 
+.header__logo {
+  height: 9rem;
+}
 
-footer {
-  width: 100%;
+.header__name {
+  display: block;
+  font-family: "Lobster", sans-serif;
+  font-size: 6rem;
+  animation: inFromLeft 1s ease-out;
+  backface-visibility: hidden;
+
+}
+
+.header__job {
+  display: block;
+  font-size: 4rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  animation: inFromRight 1s ease-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+
+.header__self-box {
+  position: absolute;
+  top: 30;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__selfie {
+  margin-top: 0px;
+  height: 25rem;
+  padding: 0px;
+  transform: translateX(50%, -100%);
+}
+
+.header__intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.profile-box {
+  height: 70vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+  display: flex;
+
+}
+
+.profile {
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.skills-box {
+  height: 95vh;
+  background-image: linear-gradient(to bottom right, rgba(78, 178, 255, 0.713), rgba(85, 0, 255, 0.489));
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 9%, 100% 80%, 0 100%);
+  display: flex;
+}
+
+.skills {
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.content-box {
+  height: 75vh;
+
+  display: flex;
+}
+
+.content {
+  width: 33%;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 
 }
 
+.contact-box {
+  height: 75vh;
+  background-image: linear-gradient(to bottom right, rgba(78, 178, 255, 0.713), rgba(85, 0, 255, 0.489));
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+  display: flex;
+}
+
+.contact {
+  height: 95vh;
+  height: 33%;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.footerbox {
+  height: 20rem;
+  background-color: rgb(60, 60, 60);
+}
 
 .footer {
   margin: auto;
@@ -115,12 +175,13 @@ footer {
   color: rgb(131, 115, 115);
 }
 
-
-
-.copyright {
+.footer__copyright {
   color: gray;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 10px;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 
@@ -128,23 +189,114 @@ footer {
 
 
 
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 1.5rem 4rem;
+  border-radius: 5rem;
+  transition: all .2s ease-in;
+  position: relative;
 
-.bgblue {
-  background-image: linear-gradient(to bottom right, rgba(78, 178, 255, 0.713), rgba(85, 0, 255, 0.489));
-  width: 100%;
-  background-size: cover;
-  background-position: top;
+
+
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, .3);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .7);
+}
+
+.btn--top {
+  animation: inFromBottom 1s ease-in .7s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
+
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
   height: 100%;
-  clip-path: polygon(0 0, 100% 9%, 100% 80%, 0 100%);
+  width: 100%;
+  border-radius: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 0.4s;
 
 }
 
-.bggreen {
-  background-image: linear-gradient(to bottom right, rgba(133, 147, 131, 0.713), rgba(18, 129, 10, 0.713));
-  width: 100%;
+.btn--white::after {
+  background-color: #fff;
 }
 
-.bggray {
-  background-color: rgb(60, 60, 60);
-  width: 100%;
+.btn:hover::after {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+@keyframes inFromBottom {
+
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes inFromLeft {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes inFromRight {
+
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
 }
