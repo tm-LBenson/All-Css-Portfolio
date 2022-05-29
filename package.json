@@ -1,0 +1,22 @@
+{
+  "name": "css_my_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tigys599/CSS_My-Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tigys599/CSS_My-Site/issues"
+  },
+  "homepage": "https://github.com/tigys599/CSS_My-Site#readme",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
+}
