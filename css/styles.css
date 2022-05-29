@@ -21,20 +21,13 @@ body {
 
 h2 {
   font-size: 2.3rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 700;
-
 }
-
-
-
-
 
 .header {
   height: 95vh;
-  background-image:
-    linear-gradient(to right bottom, rgba(115, 117, 131, 0.442), rgba(42, 14, 127, 0.401)),
-    url("grassyhill.jpg");
+  background-image: linear-gradient(to right bottom, rgba(115, 117, 131, 0.442), rgba(42, 14, 127, 0.401)), url("grassyhill.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
@@ -61,13 +54,12 @@ h2 {
   font-size: 6rem;
   animation: inFromLeft 1s ease-out;
   backface-visibility: hidden;
-
 }
 
 .header__job {
   display: block;
   font-size: 4rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   animation: inFromRight 1s ease-out;
   backface-visibility: hidden;
@@ -75,7 +67,7 @@ h2 {
 }
 
 .header__self-box {
-  height: 25vh
+  height: 25vh;
 }
 
 .header__selfie {
@@ -90,7 +82,6 @@ h2 {
   height: 70vh;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
   display: flex;
-
 }
 
 .profile {
@@ -118,7 +109,6 @@ h2 {
 
 .content-box {
   height: 75vh;
-
   display: flex;
 }
 
@@ -127,7 +117,6 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: auto;
-
 }
 
 .contact-box {
@@ -172,17 +161,12 @@ h2 {
 
 .footer__copyright {
   color: gray;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 13px;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-
-
-
-
 
 .btn:link,
 .btn:visited {
@@ -192,25 +176,22 @@ h2 {
   margin-top: 2rem;
   padding: 1.5rem 4rem;
   border-radius: 5rem;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
   position: relative;
-
-
-
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 2rem 2rem rgba(0, 0, 0, .3);
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .7);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
 }
 
 .btn--top {
-  animation: inFromBottom 1s ease-in .7s;
+  animation: inFromBottom 1s ease-in 0.7s;
   animation-fill-mode: backwards;
   backface-visibility: hidden;
 }
@@ -218,7 +199,6 @@ h2 {
 .btn--white {
   background-color: #fff;
   color: #777;
-
 }
 
 .btn::after {
@@ -232,7 +212,6 @@ h2 {
   right: 0;
   z-index: -1;
   transition: all 0.4s;
-
 }
 
 .btn--white::after {
@@ -245,23 +224,18 @@ h2 {
 }
 
 @keyframes inFromBottom {
-
   0% {
     opacity: 0;
     transform: translateY(10rem);
   }
 
-
-
   100% {
     opacity: 1;
     transform: translateX(0);
   }
-
 }
 
 @keyframes inFromLeft {
-
   0% {
     opacity: 0;
     transform: translateX(-10rem);
@@ -275,11 +249,9 @@ h2 {
     opacity: 1;
     transform: translateX(0);
   }
-
 }
 
 @keyframes inFromRight {
-
   0% {
     opacity: 0;
     transform: translateX(10rem);
@@ -293,5 +265,6 @@ h2 {
     opacity: 1;
     transform: translateX(0);
   }
-
 }
+
+/*# sourceMappingURL=styles.css.map */
