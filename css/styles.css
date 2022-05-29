@@ -1,50 +1,150 @@
-body {
-  margin: auto;
-  text-align: center;
-  font-family: "work sans", sans-serif;
-  display: flex;
-  flex-direction: column;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 
 }
 
 h1 {
   font-family: "Lobster", sans-serif;
-  margin-top: 0;
-  padding-left: 4;
-  font-size: 5.6rem;
+  font-size: 4.3rem;
+
 }
 
-h2{
-  font-size: 2.5rem;
+h2 {
+  font-size: 2.3rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
 }
 
-.intro{
-  height: 115vh;
+
+body {
+
+  text-align: left;
+  font-family: "work sans", sans-serif;
+  font-size: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+}
+
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.computer {
+  height: 90px;
+
+}
+
+
+
+
+img.selfie {
+  margin-top: 30px;
+  width: 25%;
+  padding: 20px;
+}
+
+
+section {
+  height: 100vh;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
   justify-content: center;
+  margin: auto;
+}
+
+.intro {
+  color: aliceblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin: auto;
-}
-
-.selfie {
-  height: 15vw;
-}
-
-.background {
   width: 100%;
-  max-width: 115vw;
-  max-height: 115vh;
-  position: absolute;
-  left:0;
-  top: 0;
-  z-index: -1;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
-.computer{
-  width:3vw;
+.first-section {
+  padding-top: 10%;
+  background-image:
+    linear-gradient(to right bottom, rgba(115, 117, 131, 0.442), rgba(42, 14, 127, 0.401)),
+    url("grassyhill.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
 }
 
-.middle-container{
+
+
+footer {
+  width: 100%;
   margin: auto;
-  width:40%;
-  line-height: 2;
+
+}
+
+
+.footer {
+  margin: auto;
+  width: 35%;
+  justify-content: center;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  color: rgb(131, 115, 115);
+  display: flex;
+}
+
+.footer-item {
+  display: inline-block;
+  padding-right: 30px;
+  color: rgb(131, 115, 115);
+}
+
+
+
+.copyright {
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+.bgblue {
+  background-image: linear-gradient(to bottom right, rgba(78, 178, 255, 0.713), rgba(85, 0, 255, 0.489));
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 9%, 100% 80%, 0 100%);
+
+}
+
+.bggreen {
+  background-image: linear-gradient(to bottom right, rgba(133, 147, 131, 0.713), rgba(18, 129, 10, 0.713));
+  width: 100%;
+}
+
+.bggray {
+  background-color: rgb(60, 60, 60);
+  width: 100%;
 }
