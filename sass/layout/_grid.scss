@@ -1,6 +1,6 @@
 .row {
     max-width: $grid-width;
-    background-color: $color-light-gray;
+
     margin: auto;
 
     &:not(:last-child) {
@@ -13,7 +13,7 @@
     // the brackets will select an atribute (like method, src, type ect..) the ^ means starts with
     [class^="col-"] {
 
-        background-color: $color-logo;
+
         float: left;
 
         &:not(:last-child) {

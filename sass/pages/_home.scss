@@ -1,17 +1,19 @@
 .profile {
-    display: flex;
-    height: 100vh;
-    @include greenBackground;
+    height: 150vh;
+    @include grayBackground;
+
+    @include clearfix;
 
     &-box {
-        @include centeredContainer;
+        text-align: left;
     }
 }
 
 .skills {
-    display: flex;
-    @include blueBackground;
-    height: 100vh;
+
+    @include greenBackground;
+    height: 150vh;
+    @include clipTop;
 
     &-box {
         @include centeredContainer;
@@ -20,7 +22,7 @@
 
 .content {
     display: flex;
-    @include greenBackground;
+    @include grayBackground;
     height: 100vh;
 
 

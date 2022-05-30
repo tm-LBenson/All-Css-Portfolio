@@ -1,9 +1,10 @@
 .header {
-    height: 95vh;
+    height: 125vh;
     @include heroPic;
-    display: flex;
+    @include clipBottom;
+
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 
@@ -37,14 +38,17 @@
     }
 
     &__self-box {
-        height: 25vh
+        height: 20rem;
+
     }
 
     &__selfie {
         height: 100%;
+
     }
 
     &__intro {
         height: 25vh;
+
     }
 }

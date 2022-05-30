@@ -6,7 +6,8 @@
         text-transform: uppercase;
         text-decoration: none;
         margin-top: 2rem;
-        padding: 1.5rem 4rem;
+        font-size: 2rem;
+        padding: 1.1rem 3rem;
         border-radius: 5rem;
         transition: all .2s ease-in;
         position: relative;
@@ -58,4 +59,17 @@
 
     }
 
+}
+
+.btn-text {
+
+    &:link,
+    &:visited {
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        //border is to allow padding 
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+    }
 }

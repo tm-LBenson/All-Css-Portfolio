@@ -6,12 +6,20 @@
     padding: 0;
 }
 
+
+
 html {
     font-size: 68%;
 }
 
+
+
+
+
 body {
     box-sizing: border-box;
-    background-color: $color-soft-blue;
-
+    background-color: $color-soft-gray;
+    border: 2rem solid white;
+    border-top: 0;
+    border-bottom: 0;
 }

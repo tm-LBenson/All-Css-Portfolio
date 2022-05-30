@@ -48,7 +48,10 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #2518da;
+  background-color: #eee;
+  border: 2rem solid white;
+  border-top: 0;
+  border-bottom: 0;
 }
 
 body {
@@ -58,14 +61,65 @@ body {
   font-size: 2.5rem;
 }
 
+.large-text {
+  font-size: 5rem;
+}
+
 h2 {
   font-size: 2.3rem;
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-display-flex {
+  display: flex;
+}
+
+.u-margin-top-sm {
+  margin-top: 2rem;
+}
+
+.u-margin-top-md {
+  margin-top: 5rem;
+}
+
+.u-margin-top-lg {
+  margin-top: 8rem;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 5rem;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 8rem;
+}
+
+.margin-sm {
+  margin: 1rem;
+}
+
+.marginX-md {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.marginX-lg {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .btn:link, .btn:visited {
@@ -73,7 +127,8 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 2rem;
-  padding: 1.5rem 4rem;
+  font-size: 2rem;
+  padding: 1.1rem 3rem;
   border-radius: 5rem;
   transition: all 0.2s ease-in;
   position: relative;
@@ -115,6 +170,14 @@ a {
   transition: all 0.4s;
 }
 
+.btn-text:link, .btn-text:visited {
+  color: #12810a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #12810a;
+  padding: 3px;
+}
+
 .footer {
   height: 20rem;
   background-color: #3c3c3c;
@@ -146,7 +209,6 @@ a {
 
 .row {
   max-width: 114rem;
-  background-color: #bebebe;
   margin: auto;
 }
 .row:not(:last-child) {
@@ -158,7 +220,6 @@ a {
   clear: both;
 }
 .row [class^=col-] {
-  background-color: #c88808;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
@@ -189,14 +250,13 @@ a {
 }
 
 .header {
-  height: 95vh;
+  height: 125vh;
   background-image: linear-gradient(to right bottom, rgba(115, 117, 131, 0.442), rgba(42, 14, 127, 0.401)), url("grassyhill.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  display: flex;
+  clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 100%);
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
 }
@@ -229,7 +289,7 @@ a {
   animation-fill-mode: backwards;
 }
 .header__self-box {
-  height: 25vh;
+  height: 20rem;
 }
 .header__selfie {
   height: 100%;
@@ -240,10 +300,7 @@ a {
 
 .contact {
   height: 80vh;
-  background-color: #2518da;
-  clip-path: polygon(0 20%, 100% 0, 100% 79%, 0 100%);
-  margin-top: -16rem;
-  color: #bebebe;
+  background-color: #72ae72;
   display: flex;
 }
 .contact-box {
@@ -254,26 +311,23 @@ a {
 }
 
 .profile {
-  display: flex;
-  height: 100vh;
-  background-color: #72ae72;
-  clip-path: polygon(0 18%, 100% 0, 100% 79%, 0 100%);
-  margin-top: -16rem;
+  height: 150vh;
+  background-color: #eee;
+  color: #000;
+}
+.profile::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .profile-box {
-  width: 33%;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  text-align: left;
 }
 
 .skills {
-  display: flex;
-  background-color: #2518da;
-  clip-path: polygon(0 20%, 100% 0, 100% 79%, 0 100%);
-  margin-top: -16rem;
-  color: #bebebe;
-  height: 100vh;
+  background-color: #72ae72;
+  height: 150vh;
+  clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
 }
 .skills-box {
   width: 33%;
@@ -284,9 +338,8 @@ a {
 
 .content {
   display: flex;
-  background-color: #72ae72;
-  clip-path: polygon(0 18%, 100% 0, 100% 79%, 0 100%);
-  margin-top: -16rem;
+  background-color: #eee;
+  color: #000;
   height: 100vh;
 }
 .content-box {
