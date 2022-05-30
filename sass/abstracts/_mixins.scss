@@ -12,19 +12,30 @@
 
 @mixin greenBackground {
     background-color: $color-light-green;
-    clip-path: polygon(0 18%, 100% 0, 100% 79%, 0 100%);
-    margin-top: -16rem;
+
+
+
+
 
 }
 
-@mixin blueBackground {
-    background-color: $color-soft-blue;
-
-    clip-path: polygon(0 20%, 100% 0, 100% 79%, 0 100%);
-    margin-top: -16rem;
-    color: $color-font-bluebg;
+@mixin grayBackground {
+    background-color: $color-soft-gray;
 
 
+
+    color: $color-font-graybg;
+
+
+
+}
+
+@mixin clipBottom {
+    clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 100%);
+}
+
+@mixin clipTop {
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
 }
 
 @mixin heroPic {
@@ -33,8 +44,6 @@
         url("grassyhill.jpg");
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-
 }
 
 @mixin centeredContainer {
