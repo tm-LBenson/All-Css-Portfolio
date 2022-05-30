@@ -1,0 +1,17 @@
+.contact {
+    height: 75vh;
+    background-image: linear-gradient(to bottom right, rgba(78, 178, 255, 0.713), rgba(85, 0, 255, 0.489));
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    display: flex;
+
+    &-box {
+        height: 95vh;
+        height: 33%;
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
