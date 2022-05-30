@@ -1,5 +1,4 @@
 body {
-    background-image: linear-gradient(to bottom right, rgba(133, 147, 131, 0.713), $color-primary);
     width: 100%;
     text-align: left;
     font-family: "work sans", sans-serif;
@@ -12,4 +11,8 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
 
+}
+
+a {
+    text-decoration: none;
 }

@@ -1,0 +1,52 @@
+// needed when all elements in a parent are floated, making the parent element have a height of 0px
+@mixin clearfix {
+    &::after {
+        // sudo elements require content, even an empty string to exist
+        content: "";
+        // conventenial way to display the clearfix
+        display: table;
+        // clear both float left and float right from the sudo elements, which then holds open the parent element
+        clear: both;
+    }
+}
+
+@mixin greenBackground {
+    background-color: $color-light-green;
+    clip-path: polygon(0 18%, 100% 0, 100% 79%, 0 100%);
+    margin-top: -16rem;
+
+}
+
+@mixin blueBackground {
+    background-color: $color-soft-blue;
+
+    clip-path: polygon(0 20%, 100% 0, 100% 79%, 0 100%);
+    margin-top: -16rem;
+    color: $color-font-bluebg;
+
+
+}
+
+@mixin heroPic {
+    background-image:
+        linear-gradient(to right bottom, rgba(115, 117, 131, 0.442), rgba(42, 14, 127, 0.401)),
+        url("grassyhill.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
+}
+
+@mixin centeredContainer {
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@mixin textGradient {
+    display: inline-block;
+    background-image: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+}

@@ -1,11 +1,6 @@
 .header {
     height: 95vh;
-    background-image:
-        linear-gradient(to right bottom, rgba(115, 117, 131, 0.442), rgba(42, 14, 127, 0.401)),
-        url("grassyhill.jpg");
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+    @include heroPic;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +23,7 @@
         font-size: 6rem;
         animation: inFromLeft 1s ease-out;
         backface-visibility: hidden;
-
+        @include textGradient;
     }
 
     &__job {

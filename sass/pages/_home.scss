@@ -1,0 +1,30 @@
+.profile {
+    display: flex;
+    height: 100vh;
+    @include greenBackground;
+
+    &-box {
+        @include centeredContainer;
+    }
+}
+
+.skills {
+    display: flex;
+    @include blueBackground;
+    height: 100vh;
+
+    &-box {
+        @include centeredContainer;
+    }
+}
+
+.content {
+    display: flex;
+    @include greenBackground;
+    height: 100vh;
+
+
+    &-box {
+        @include centeredContainer;
+    }
+}
