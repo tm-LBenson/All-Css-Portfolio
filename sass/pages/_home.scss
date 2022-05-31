@@ -1,12 +1,17 @@
 .profile {
-    height: 150vh;
+
     @include grayBackground;
 
-    @include clearfix;
+
 
     &-box {
         text-align: left;
     }
+}
+
+.cutoff {
+    content: "";
+    display: table;
 }
 
 .skills {
@@ -21,7 +26,7 @@
 }
 
 .content {
-    display: flex;
+
     @include grayBackground;
     height: 100vh;
 

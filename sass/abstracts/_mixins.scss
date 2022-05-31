@@ -12,22 +12,11 @@
 
 @mixin greenBackground {
     background-color: $color-light-green;
-
-
-
-
-
 }
 
 @mixin grayBackground {
     background-color: $color-soft-gray;
-
-
-
     color: $color-font-graybg;
-
-
-
 }
 
 @mixin clipBottom {
