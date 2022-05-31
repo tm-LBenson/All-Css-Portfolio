@@ -9,11 +9,6 @@
     }
 }
 
-.cutoff {
-    content: "";
-    display: table;
-}
-
 .skills {
 
     @include greenBackground;
@@ -26,12 +21,12 @@
 }
 
 .content {
-
+    position: relative;
     @include grayBackground;
     height: 100vh;
 
 
     &-box {
-        @include centeredContainer;
+        position: relative;
     }
 }
