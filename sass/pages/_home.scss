@@ -18,8 +18,12 @@
     display: block;
     z-index: 0;
 
+
+
     &-box {
         @include centeredContainer;
+
+
     }
 }
 

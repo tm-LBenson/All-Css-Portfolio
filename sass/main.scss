@@ -2,13 +2,15 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
 
-@import "components/button";
+@import "components/buttoneffects";
+@import "components/buttonstyles";
 @import "components/card";
 @import "components/composition";
 @import "components/featurebox";
@@ -27,5 +29,5 @@
 @import "layout/navigation";
 @import "layout/content";
 @import "layout/contact";
-
+@import "abstracts/media.scss";
 @import "pages/home";

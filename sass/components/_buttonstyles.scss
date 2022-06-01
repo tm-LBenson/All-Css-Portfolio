@@ -1,0 +1,48 @@
+.btn {
+
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-top: 2rem;
+        font-size: 2rem;
+        padding: 1.1rem 3rem;
+        border-radius: 5rem;
+        position: relative;
+
+    }
+
+    // button color
+    &--white {
+        background-color: #fff;
+        color: #777;
+
+        &::after {
+            background-color: #fff;
+        }
+
+    }
+
+}
+
+// make a button out of text with primary color
+.btn-text-primary {
+
+    &:link,
+    &:visited {
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        //border is to allow padding 
+        border: 1px solid $color-primary;
+        padding: 3px;
+        border-radius: .5rem;
+        transition: all .4s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: #fff;
+    }
+}

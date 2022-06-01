@@ -19,51 +19,8 @@
 html {
     font-size: 62.5%; // 1 rem = 10px | 10/16 = 62.5
 
-    @include respond(sm) {
-        font-size: 35%;
-    }
-
-    @include respond(md) {
-        font-size: 40%;
-    }
-
-    @include respond(lg) {
-        font-size: 45%;
-    }
-
-    @include respond(xl) {
-        font-size: 55%;
-    }
-
-    @include respond(xxl) {
-        font-size: 62.5%;
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
-
-
-
 
 
 body {
@@ -72,4 +29,5 @@ body {
     border: 2rem solid white;
     border-top: 0;
     border-bottom: 0;
+
 }

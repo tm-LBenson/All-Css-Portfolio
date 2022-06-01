@@ -108,7 +108,15 @@
     }
 
     @if $breakpoint ==xxl {
-        @media (min-width: 87.5em) {
+        @media (max-width: 87.5em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint ==full {
+        @media (min-width: 88.5em) {
             @content
         }
 

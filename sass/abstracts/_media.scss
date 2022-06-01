@@ -12,3 +12,84 @@
 // @function media-breakpoint-up(lg) { ... }
 // @function media-breakpoint-up(xl) { ... }
 // @function media-breakpoint-up(xxl) { ... }
+
+
+html {
+    @include respond(sm) {
+        font-size: 35%;
+    }
+
+    @include respond(md) {
+        font-size: 40%;
+    }
+
+    @include respond(lg) {
+        font-size: 45%;
+    }
+
+    @include respond(xl) {
+        font-size: 55%;
+    }
+
+    @include respond(xxl) {
+        font-size: 62.5%;
+
+    }
+}
+
+
+@include respond(xxl) {
+    .row {
+        width: 1000px;
+
+        flex-wrap: wrap;
+        margin-top: 10rem;
+
+        .lg-col-2-of-4 {
+            margin-top: -8rem;
+            margin-bottom: 2rem;
+            margin-left: 9rem;
+
+
+        }
+    }
+}
+
+@include respond (lg) {
+    .composition {
+        display: none;
+    }
+}
+
+@include respond(lg) {
+    body {
+        width: 100%;
+        display: flex;
+        border: none;
+        margin: auto;
+
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        main {
+            .large-text {
+                font-size: 3rem;
+                margin-bottom: -7rem;
+                margin-top: -5rem;
+            }
+
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+            .profile-box {
+                width: 100%;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+}
