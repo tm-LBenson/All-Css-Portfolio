@@ -34,6 +34,16 @@
     transform: translateX(0);
   }
 }
+@keyframes flash {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 *,
 *::after,
 *::before {
@@ -44,6 +54,31 @@
 
 html {
   font-size: 68%;
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 40%;
+  }
 }
 
 body {
@@ -126,6 +161,10 @@ a {
   margin-right: 5rem;
 }
 
+.u-padding-sm {
+  padding: 1rem;
+}
+
 .u-padding-top-lg {
   padding-top: 16rem;
 }
@@ -138,7 +177,6 @@ a {
   font-size: 2rem;
   padding: 1.1rem 3rem;
   border-radius: 5rem;
-  transition: all 0.2s ease-in;
   position: relative;
 }
 .btn:hover {
@@ -146,8 +184,9 @@ a {
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
 }
 .btn:hover::after {
-  transform: scale(1.5);
-  opacity: 0;
+  animation: flash 0.4s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
 }
 .btn:active {
   transform: translateY(-1px);
@@ -175,7 +214,9 @@ a {
   top: 0;
   right: 0;
   z-index: -1;
-  transition: all 0.4s;
+  transition: all 0.4s ease;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
 }
 
 .btn-text-primary:link, .btn-text-primary:visited {
@@ -185,7 +226,7 @@ a {
   border: 1px solid #12810a;
   padding: 3px;
   border-radius: 0.5rem;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 .btn-text-primary:hover {
   background-color: #12810a;
@@ -207,10 +248,14 @@ a {
   -moz-perspective: 150rem;
   height: 50rem;
 }
+.card__text {
+  padding: 1rem;
+}
 .card__side {
   background-color: #d4d4d4;
   color: black;
   font-size: 2rem;
+  overflow: hidden;
   height: 40rem;
   width: 100%;
   transition: all 0.8s ease;
@@ -223,6 +268,12 @@ a {
 .card__side--front {
   background-color: #d4d4d4;
   left: 50px;
+}
+.card__side--front--pic {
+  height: 20rem;
+  background-image: url("../images/YelpCamp.png");
+  background-size: cover;
+  background-position: top;
 }
 .card__side--back {
   background-color: #d4d4d4;
@@ -287,15 +338,75 @@ a {
   transform: scale(1.13);
 }
 
+.signup {
+  background-color: #d4d4d4;
+  border-radius: 3px;
+  box-shadow: 0 2.4rem 3.4rem rgba(0, 0, 0, 0.485);
+  min-width: 1rem;
+  width: 40%;
+}
+.signup__form {
+  width: 100%;
+  padding: 6rem;
+  margin: auto;
+  display: flex;
+}
+.signup__form--input-label {
+  min-width: 7rem;
+  width: 80%;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.signup__form--input-text {
+  min-width: 8rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  display: inline-block;
+}
+
+.signup {
+  background-color: #d4d4d4;
+  border-radius: 3px;
+  box-shadow: 0 2.4rem 3.4rem rgba(0, 0, 0, 0.485);
+  min-width: 1rem;
+  width: 40%;
+}
+.signup__form {
+  width: 100%;
+  padding: 6rem;
+  margin: auto;
+  display: flex;
+}
+.signup__form--input-label {
+  min-width: 7rem;
+  width: 80%;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.signup__form--input-text {
+  min-width: 8rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  display: inline-block;
+}
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 50rem;
 }
+.card__text {
+  padding: 1rem;
+}
 .card__side {
   background-color: #d4d4d4;
   color: black;
   font-size: 2rem;
+  overflow: hidden;
   height: 40rem;
   width: 100%;
   transition: all 0.8s ease;
@@ -308,6 +419,12 @@ a {
 .card__side--front {
   background-color: #d4d4d4;
   left: 50px;
+}
+.card__side--front--pic {
+  height: 20rem;
+  background-image: url("../images/YelpCamp.png");
+  background-size: cover;
+  background-position: top;
 }
 .card__side--back {
   background-color: #d4d4d4;
@@ -349,23 +466,63 @@ a {
   padding-bottom: 0px;
 }
 
+.rowfloat {
+  max-width: 130rem;
+  margin: auto;
+}
+.rowfloat:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.rowfloat [class^=col-] {
+  float: left;
+}
+.rowfloat [class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+.rowfloat::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.rowfloat .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.flcol-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+.flcol-2-of-3 {
+  width: calc(2*((100% - 2* 6rem)/3) + 6rem);
+}
+
+.flcol-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+
+.flcol-2-of-4 {
+  width: calc(2*((100% - 3* 6rem)/4) + 6rem);
+}
+
+.flcol-3-of-4 {
+  width: calc(3 * (100% - 3* 6rem) / 4 + (6rem * 2));
+}
+
+.flcol-4-of-4 {
+  width: calc(4*((100% - 1* 6rem)/4) + 6rem);
+}
+
 .row {
+  display: flex;
+  flex-direction: row;
   max-width: 130rem;
   margin: auto;
 }
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
-.row [class^=col-] {
-  float: left;
-}
 .row [class^=col-]:not(:last-child) {
   margin-right: 6rem;
-}
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .row .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
@@ -392,6 +549,22 @@ a {
 }
 
 .col-4-of-4 {
+  width: calc(4*((100% - 1* 6rem)/4) + 6rem);
+}
+
+.col-1-of-5 {
+  width: calc((100% - 4 * 6rem) / 5);
+}
+
+.col-2-of-5 {
+  width: calc(2*((100% - 2* 6rem)/3) + 6rem);
+}
+
+.col-3-of-5 {
+  width: calc(3 * (100% - 3* 6rem) / 4 + (6rem * 2));
+}
+
+.col-4-of-5 {
   width: calc(4*((100% - 1* 6rem)/4) + 6rem);
 }
 
@@ -466,7 +639,7 @@ a {
 
 .skills {
   background-color: #72ae72;
-  height: 150vh;
+  height: 120vh;
   clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
 }
 .skills-box {

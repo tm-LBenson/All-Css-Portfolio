@@ -4,14 +4,16 @@
     height: 50rem;
 
 
-
+    &__text {
+        padding: 1rem;
+    }
 
 
     &__side {
         background-color: $color-white-card;
         color: black;
         font-size: 2rem;
-
+        overflow: hidden;
         height: 40rem;
         width: 100%;
         transition: all .8s ease;
@@ -24,6 +26,13 @@
         &--front {
             background-color: $color-white-card;
             left: 50px;
+
+            &--pic {
+                height: 20rem;
+                background-image: url("../images/YelpCamp.png");
+                background-size: cover;
+                background-position: top;
+            }
         }
 
         &--back {
@@ -31,6 +40,7 @@
             transform: rotateY(180deg);
         }
     }
+
 
 
 

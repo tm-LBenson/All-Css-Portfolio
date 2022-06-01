@@ -9,7 +9,6 @@
         font-size: 2rem;
         padding: 1.1rem 3rem;
         border-radius: 5rem;
-        transition: all .2s ease-in;
         position: relative;
 
     }
@@ -19,8 +18,9 @@
         box-shadow: 0 2rem 2rem rgba(0, 0, 0, .3);
 
         &::after {
-            transform: scale(1.5);
-            opacity: 0;
+            animation: flash .4s;
+            animation-fill-mode: backwards;
+            backface-visibility: hidden;
         }
     }
 
@@ -55,7 +55,10 @@
         top: 0;
         right: 0;
         z-index: -1;
-        transition: all 0.4s;
+        transition: all .4s ease;
+        animation-fill-mode: backwards;
+        backface-visibility: hidden;
+
 
     }
 
@@ -72,7 +75,7 @@
         border: 1px solid $color-primary;
         padding: 3px;
         border-radius: .5rem;
-        transition: all .2s;
+        transition: all .4s;
     }
 
     &:hover {
@@ -84,7 +87,9 @@
         &::after {
             transform: scale(1.5);
             opacity: 0;
+
         }
+
     }
 
     &:active {

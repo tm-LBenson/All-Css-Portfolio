@@ -12,6 +12,7 @@
 @import "components/card";
 @import "components/composition";
 @import "components/featurebox";
+@import "components/form";
 
 
 @import "components/form";
@@ -20,7 +21,8 @@
 @import "components/card";
 
 @import "layout/footer";
-@import "layout/grid";
+@import "layout/gridfloat";
+@import "layout/gridflex";
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/content";
