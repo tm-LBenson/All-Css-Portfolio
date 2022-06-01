@@ -3,6 +3,7 @@
     @include grayBackground;
 
 
+    z-index: 0;
 
     &-box {
         text-align: left;
@@ -10,10 +11,12 @@
 }
 
 .skills {
-
+    position: relative;
     @include greenBackground;
-    height: 120vh;
+    min-height: 120vh;
     @include clipTop;
+    display: block;
+    z-index: 0;
 
     &-box {
         @include centeredContainer;
@@ -23,9 +26,10 @@
 .content {
     position: relative;
     @include grayBackground;
-    height: 100vh;
+    min-height: 100vh;
     margin-right: 10rem;
-
+    display: block;
+    z-index: 0;
 
     &-box {
         position: relative;

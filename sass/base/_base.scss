@@ -17,31 +17,49 @@
 // );
 
 html {
-    font-size: 22.5%; // 1 rem = 10px | 10/16 = 62.5
+    font-size: 62.5%; // 1 rem = 10px | 10/16 = 62.5
 
     @include respond(sm) {
-        font-size: 22%;
-    }
-
-    @include respond(sm) {
-        font-size: 40%;
+        font-size: 35%;
     }
 
     @include respond(md) {
-        font-size: 50%;
+        font-size: 40%;
     }
 
     @include respond(lg) {
-        font-size: 54%;
+        font-size: 45%;
     }
 
     @include respond(xl) {
-        font-size: 60%;
+        font-size: 55%;
     }
 
     @include respond(xxl) {
-        font-size: 69%;
+        font-size: 62.5%;
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 

@@ -53,46 +53,36 @@
 }
 
 html {
-  font-size: 22.5%;
+  font-size: 62.5%;
 }
-@media (min-width: 12.5em) {
+@media (max-width: 12.5em) {
   html {
-    font-size: 22%;
+    font-size: 35%;
   }
 }
-@media (min-width: 36em) {
+@media (max-width: 36em) {
   html {
-    font-size: 22%;
+    font-size: 35%;
   }
 }
-@media (min-width: 12.5em) {
+@media (max-width: 48em) {
   html {
     font-size: 40%;
   }
 }
-@media (min-width: 36em) {
+@media (max-width: 62em) {
   html {
-    font-size: 40%;
+    font-size: 45%;
   }
 }
-@media (min-width: 48em) {
+@media (max-width: 75em) {
   html {
-    font-size: 50%;
-  }
-}
-@media (min-width: 992px) {
-  html {
-    font-size: 54%;
-  }
-}
-@media (min-width: 75em) {
-  html {
-    font-size: 60%;
+    font-size: 55%;
   }
 }
 @media (min-width: 87.5em) {
   html {
-    font-size: 69%;
+    font-size: 62.5%;
   }
 }
 
@@ -343,6 +333,7 @@ a {
   border-radius: 0.3rem;
   min-width: 30rem;
   height: 30rem;
+  margin-bottom: 12rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.674);
   transition: all 0.3s;
 }
@@ -651,15 +642,19 @@ a {
 .profile {
   background-color: #eee;
   color: #000;
+  z-index: 0;
 }
 .profile-box {
   text-align: left;
 }
 
 .skills {
+  position: relative;
   background-color: #72ae72;
-  height: 120vh;
+  min-height: 120vh;
   clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+  display: block;
+  z-index: 0;
 }
 .skills-box {
   width: 33%;
@@ -672,8 +667,10 @@ a {
   position: relative;
   background-color: #eee;
   color: #000;
-  height: 100vh;
+  min-height: 100vh;
   margin-right: 10rem;
+  display: block;
+  z-index: 0;
 }
 .content-box {
   position: relative;
