@@ -24,19 +24,19 @@ html {
     }
 
     @include respond(md) {
-        font-size: 45%;
-    }
-
-    @include respond(lg) {
         font-size: 50%;
     }
 
+    @include respond(lg) {
+        font-size: 60%;
+    }
+
     @include respond(xl) {
-        font-size: 55%;
+        font-size: 70%;
     }
 
     @include respond(xxl) {
-        font-size: 60%;
+        font-size: 80%;
     }
 }
 
