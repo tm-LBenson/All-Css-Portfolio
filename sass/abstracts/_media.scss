@@ -14,28 +14,28 @@
 // @function media-breakpoint-up(xxl) { ... }
 
 
-html {
-    @include respond(sm) {
-        font-size: 35%;
-    }
+// html {
+//     @include respond(sm) {
+//         font-size: 35%;
+//     }
 
-    @include respond(md) {
-        font-size: 40%;
-    }
+//     @include respond(md) {
+//         font-size: 40%;
+//     }
 
-    @include respond(lg) {
-        font-size: 45%;
-    }
+//     @include respond(lg) {
+//         font-size: 45%;
+//     }
 
-    @include respond(xl) {
-        font-size: 55%;
-    }
+//     @include respond(xl) {
+//         font-size: 55%;
+//     }
 
-    @include respond(xxl) {
-        font-size: 62.5%;
+//     @include respond(xxl) {
+//         font-size: 62.5%;
 
-    }
-}
+//     }
+// }
 
 
 @include respond(xxl) {
