@@ -62,8 +62,9 @@
 
 
 @mixin respond ($breakpoint) {
+
     @if $breakpoint ==sm {
-        @media (max-width: 576px) {
+        @media (min-width: 12.5em) {
             @content
         }
 
@@ -71,34 +72,48 @@
     }
 
     @if $breakpoint ==sm {
-        @media (max-width: 768px) {
+        @media (min-width: 36em) {
             @content
         }
 
         ;
     }
 
-    @if $breakpoint ==sm {
-        @media (max-width: 992px) {
+    @if $breakpoint ==md {
+        @media (min-width: 48em) {
             @content
         }
 
         ;
     }
 
-    @if $breakpoint ==sm {
-        @media (max-width: 1200px) {
+    @if $breakpoint ==lg {
+        @media (min-width: 992px) {
             @content
         }
 
         ;
+
+
     }
 
-    @if $breakpoint ==sm {
-        @media (max-width: 1400px) {
+    @if $breakpoint ==xl {
+        @media (min-width: 75em) {
             @content
         }
 
         ;
+
+
+    }
+
+    @if $breakpoint ==xxl {
+        @media (min-width: 87.5em) {
+            @content
+        }
+
+        ;
+
+
     }
 }
