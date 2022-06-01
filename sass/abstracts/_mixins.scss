@@ -24,7 +24,7 @@
 }
 
 @mixin clipTop {
-    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(0 17vh, 100% 0%, 100% 100%, 0 100%);
 }
 
 @mixin heroPic {

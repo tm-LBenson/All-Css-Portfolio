@@ -55,6 +55,36 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 12.5em) {
+  html {
+    font-size: 35%;
+  }
+}
+@media (max-width: 36em) {
+  html {
+    font-size: 35%;
+  }
+}
+@media (max-width: 48em) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 62em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 87.5em) {
+  html {
+    font-size: 62.5%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -601,9 +631,73 @@ a {
   margin: auto;
 }
 
+@media (max-width: 48em) {
+  .header__logo {
+    display: none;
+  }
+
+  section {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .profile {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .profile h2 {
+    width: 100vw;
+    text-align: center;
+  }
+  .profile p {
+    width: 100vw;
+    text-align: center;
+  }
+}
+@media (max-width: 48em) {
+  main {
+    width: 100vw;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100vw;
+  }
+  .footer .footer-box {
+    width: 50%;
+  }
+  .footer .footer-box .footer-item {
+    font-size: 1rem;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    display: none;
+  }
+
+  .card {
+    display: none;
+  }
+  .card .lg-col-2-of-4 {
+    margin-top: -8rem;
+    margin-bottom: 2rem;
+  }
+}
 @media (max-width: 87.5em) {
   .row {
-    width: 1000px;
+    width: 100vw;
     flex-wrap: wrap;
     margin-top: 10rem;
   }
@@ -658,7 +752,7 @@ a {
   position: relative;
   background-color: #72ae72;
   min-height: 120vh;
-  clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+  clip-path: polygon(0 17vh, 100% 0%, 100% 100%, 0 100%);
   display: block;
   z-index: 0;
 }

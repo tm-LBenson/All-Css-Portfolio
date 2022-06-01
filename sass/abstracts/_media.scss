@@ -14,33 +14,112 @@
 // @function media-breakpoint-up(xxl) { ... }
 
 
-// html {
-//     @include respond(sm) {
-//         font-size: 35%;
-//     }
 
-//     @include respond(md) {
-//         font-size: 40%;
-//     }
+@include respond(md) {
 
-//     @include respond(lg) {
-//         font-size: 45%;
-//     }
+    .header__logo {
+        display: none;
+    }
 
-//     @include respond(xl) {
-//         font-size: 55%;
-//     }
+    section {
+        width: 100vw;
+        text-align: center;
+    }
 
-//     @include respond(xxl) {
-//         font-size: 62.5%;
+    .profile {
+        font-size: 2rem;
+        text-align: center;
 
-//     }
+        h2 {
+            width: 100vw;
+            text-align: center;
+        }
+
+        p {
+            width: 100vw;
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+@include respond(md) {
+    main {
+        width:
+            100vw;
+
+    }
+
+    body {
+        text-align: center;
+
+    }
+
+    .contact-box {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100vw;
+
+        .footer-box {
+            width: 50%;
+
+            .footer-item {
+                font-size: 1rem;
+            }
+        }
+    }
+
+
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        display: none;
+    }
+
+    .card {
+        display: none;
+
+        .lg-col-2-of-4 {
+
+
+            margin-top: -8rem;
+            margin-bottom: 2rem;
+
+
+
+        }
+    }
+}
+
+// @include respond(md) {
+//     font-size: 30%;
 // }
 
+// @include respond(lg) {
+//     font-size: 45%;
+// }
+
+// @include respond(xl) {
+//     font-size: 55%;
+// }
+
+// @include respond(xxl) {
+//     font-size: 62.5%;
+
+// }
 
 @include respond(xxl) {
     .row {
-        width: 1000px;
+        width: 100vw;
 
         flex-wrap: wrap;
         margin-top: 10rem;
