@@ -10,18 +10,18 @@
 
     &__logo-box {
         position: absolute;
-        top: 3rem;
-        left: 3rem;
+        top: 5rem;
+        left: 5rem;
     }
 
     &__logo {
-        height: 9rem;
+        height: 6rem;
     }
 
     &__name {
         display: block;
         font-family: "Lobster", sans-serif;
-        font-size: 6rem;
+        font-size: 12rem;
         animation: inFromLeft 1s ease-out;
         backface-visibility: hidden;
         @include textGradient;
@@ -29,7 +29,7 @@
 
     &__job {
         display: block;
-        font-size: 4rem;
+        font-size: 5rem;
         font-family: 'Courier New', Courier, monospace;
         font-weight: 700;
         animation: inFromRight 1s ease-out;
