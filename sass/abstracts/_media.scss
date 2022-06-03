@@ -14,7 +14,6 @@
 // @function media-breakpoint-up(xxl) { ... }
 
 
-
 @include respond(md) {
 
 
@@ -108,7 +107,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        padding-top: 30rem;
+        padding-top: 23rem;
 
 
         .row {
@@ -129,18 +128,27 @@
         }
 
         &--wrapper {
-            width: 50rem;
+            width: 25rem;
             display: flex;
             flex-direction: row;
-
+            padding-top: 25rem;
             justify-content: space-evenly;
             align-items: flex-end;
-            margin: 0 auto;
+            margin: -40rem 0 13rem 18rem;
         }
     }
 
+
+
+
+
     .feature-box {
-        margin: 0;
+
+        font-size: 1.7rem;
+        padding: 5.5rem;
+        min-width: 26rem;
+        height: 40rem;
+        margin-bottom: 12rem;
     }
 
     .content .content-box .row {
@@ -160,6 +168,7 @@
 
             .card {
                 margin-top: 50rem;
+                margin-left: -12rem;
             }
 
             .row {
@@ -232,7 +241,11 @@
 
 
 
-
+@include respondY(sh) {
+    .content {
+        margin-bottom: 10rem;
+    }
+}
 
 
 
