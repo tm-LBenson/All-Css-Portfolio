@@ -59,7 +59,15 @@
 //   xxl: 1400px
 // );
 
+@mixin respondY($breakpoint) {
+    @if $breakpoint ==sh {
+        @media(min-height: 52sem) {
+            @content
+        }
+    }
 
+    ;
+}
 
 @mixin respond ($breakpoint) {
 
