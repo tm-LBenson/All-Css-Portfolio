@@ -24,12 +24,12 @@
 .skills {
     position: relative;
     @include greenBackground;
-    min-height: 120vh;
+
     @include clipTop;
     display: block;
     z-index: 0;
     width: 100vw;
-
+    padding: 33rem 0;
 
     &-box {
         @include centeredContainer;

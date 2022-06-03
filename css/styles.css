@@ -744,10 +744,49 @@ a {
 }
 
 @media (max-width: 48em) {
+  .u-margin-top-lg {
+    margin-top: 8rem;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header {
+    width: 100vw;
+  }
+
+  .profile {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .profile h2 {
+    width: 100vw;
+    text-align: center;
+  }
+  .profile p {
+    width: 100vw;
+    text-align: center;
+  }
+
   .composition {
     display: flex;
     position: relative;
     flex-direction: column;
+    margin: 0 0 8rem;
   }
   .composition__photo {
     width: 55%;
@@ -758,87 +797,105 @@ a {
     align-items: center;
   }
   .composition__photo--p1 {
-    left: 6rem;
+    left: 25%;
     top: -5rem;
   }
   .composition__photo--p2 {
-    left: 6rem;
+    left: 25%;
     top: 0rem;
   }
   .composition__photo--p3 {
-    left: 6rem;
+    left: 25%;
     top: 5rem;
   }
-}
-.u-margin-top-lg {
-  margin-top: 8rem;
-}
 
-html {
-  font-size: 50%;
-}
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 30rem;
+  }
+  .skills .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 19rem;
+    margin-top: 21rem;
+    width: 50%;
+  }
+  .skills .row [class^=col-]:not(:last-child) {
+    margin-right: 0rem;
+    margin: 7rem;
+  }
+  .skills--wrapper {
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 0 auto;
+  }
 
-section {
-  width: 100%;
-  text-align: center;
-}
+  .feature-box {
+    margin: 0;
+  }
 
-.header {
-  width: 100vw;
-}
+  .content .content-box .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .content .row [class^=col-]:not(:last-child) {
+    margin-right: 0rem;
+  }
 
-.profile {
-  font-size: 2rem;
-  text-align: center;
-}
-.profile h2 {
-  width: 100vw;
-  text-align: center;
-}
-.profile p {
-  width: 100vw;
-  text-align: center;
-}
+  .card-1 {
+    max-width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+  }
 
-main {
-  width: 100vw;
-}
+  .card-2 {
+    max-width: fit-content;
+    position: absolute;
+    top: 300%;
+    left: 35%;
+  }
 
-body {
-  text-align: center;
-}
+  .card-3 {
+    max-width: fit-content;
+    position: absolute;
+    bottom: -550%;
+    left: 35%;
+  }
 
-.contact-box {
-  width: 100%;
-}
+  .card .lg-col-2-of-4 {
+    margin-top: -8rem;
+    margin-bottom: 2rem;
+  }
 
-.footer {
-  width: 100vw;
-}
-.footer .footer-box {
-  width: 50%;
-}
-.footer .footer-box .footer-item {
-  font-size: 1rem;
-}
-.footer #themes {
-  margin-top: -16rem;
-}
+  .contact-box {
+    width: 100%;
+  }
 
-.row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
+  .footer {
+    width: 100vw;
+  }
+  .footer .footer-box {
+    width: 50%;
+  }
+  .footer .footer-box .footer-item {
+    font-size: 1rem;
+  }
+  .footer #themes {
+    margin-top: -16rem;
+  }
 }
-
-.card .lg-col-2-of-4 {
-  margin-top: -8rem;
-  margin-bottom: 2rem;
-}
-
 @media (max-width: 87.5em) {
   html {
     font-size: 35%;
@@ -873,11 +930,11 @@ body {
 .skills {
   position: relative;
   background-color: #72ae72;
-  min-height: 120vh;
   clip-path: polygon(0 17vh, 100% 0%, 100% 100%, 0 100%);
   display: block;
   z-index: 0;
   width: 100vw;
+  padding: 33rem 0;
 }
 .skills-box {
   width: 33%;
