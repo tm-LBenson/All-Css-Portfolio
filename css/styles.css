@@ -844,6 +844,22 @@ a {
   }
 
   .content .content-box .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 0 auto 0;
+    height: 65rem;
+  }
+
+  .content .content-box {
+    height: 100%;
+  }
+  .content .content-box .card {
+    margin-top: 50rem;
+  }
+  .content .content-box .row {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -853,37 +869,22 @@ a {
     margin-right: 0rem;
   }
 
-  .card-1 {
-    max-width: fit-content;
-    position: absolute;
-    top: 50%;
-    left: 35%;
-  }
-
-  .card-2 {
-    max-width: fit-content;
-    position: absolute;
-    top: 300%;
-    left: 35%;
-  }
-
-  .card-3 {
-    max-width: fit-content;
-    position: absolute;
-    bottom: -550%;
-    left: 35%;
-  }
-
   .card .lg-col-2-of-4 {
     margin-top: -8rem;
     margin-bottom: 2rem;
   }
 
+  .contact {
+    height: 25vh;
+  }
+
   .contact-box {
     width: 100%;
+    height: 1rem;
   }
 
   .footer {
+    height: 1 rem;
     width: 100vw;
   }
   .footer .footer-box {
@@ -944,6 +945,7 @@ a {
 }
 
 .content {
+  margin-top: 5rem;
   position: relative;
   background-color: #eee;
   color: #000;
@@ -955,6 +957,11 @@ a {
 }
 .content-box {
   position: relative;
+  height: 100%;
+}
+.content-box .card {
+  height: 100%;
+  margin-top: 10rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
