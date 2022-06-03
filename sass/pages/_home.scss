@@ -1,14 +1,25 @@
 .profile {
 
     @include grayBackground;
-
+    width: 100vw;
 
     z-index: 0;
 
     &-box {
         text-align: left;
     }
+
+    h2 {
+        width: 100%;
+
+    }
+
+    p {
+        width: 100%;
+
+    }
 }
+
 
 .skills {
     position: relative;
@@ -17,7 +28,7 @@
     @include clipTop;
     display: block;
     z-index: 0;
-
+    width: 100vw;
 
 
     &-box {
@@ -34,6 +45,9 @@
     margin-right: 10rem;
     display: block;
     z-index: 0;
+    width: 100vw;
+
+
 
     &-box {
         position: relative;

@@ -17,88 +17,167 @@
 
 @include respond(md) {
 
-    .header__logo {
-        display: none;
-    }
-
-    section {
-        width: 100vw;
-        text-align: center;
-    }
-
-    .profile {
-        font-size: 2rem;
-        text-align: center;
-
-        h2 {
-            width: 100vw;
-            text-align: center;
-        }
-
-        p {
-            width: 100vw;
-            text-align: center;
-        }
-    }
-
-}
-
-
-
-@include respond(md) {
-    main {
-        width:
-            100vw;
-
-    }
-
-    body {
-        text-align: center;
-
-    }
-
-    .contact-box {
-        width: 100%;
-    }
-
-    .footer {
-        width: 100vw;
-
-        .footer-box {
-            width: 50%;
-
-            .footer-item {
-                font-size: 1rem;
-            }
-        }
-    }
-
-
-
-    .row {
+    .composition {
         display: flex;
+        position: relative;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: auto;
-        display: none;
+
+
+
+        &__photo {
+            width: 55%;
+
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &--p1 {
+                left: 6rem;
+                top: -5rem;
+            }
+
+            &--p2 {
+                left: 6rem;
+                top: 0rem;
+
+            }
+
+            &--p3 {
+                left: 6rem;
+                top: 5rem;
+            }
+
+        }
+
     }
 
-    .card {
-        display: none;
 
-        .lg-col-2-of-4 {
+}
 
 
-            margin-top: -8rem;
-            margin-bottom: 2rem;
 
 
+.u-margin-top-lg {
+    margin-top: 8rem;
+}
+
+//resize base font size which effects most elements
+html {
+    font-size: 50%;
+}
+
+
+//rezise main content and center text
+section {
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    width: 100vw;
+}
+
+.profile {
+    font-size: 2rem;
+    text-align: center;
+
+    h2 {
+        width: 100vw;
+        text-align: center;
+    }
+
+    p {
+        width: 100vw;
+        text-align: center;
+    }
+}
+
+main {
+    width:
+        100vw;
+
+}
+
+body {
+    text-align: center;
+
+}
+
+.contact-box {
+    width: 100%;
+}
+
+.footer {
+    width: 100vw;
+
+    .footer-box {
+        width: 50%;
+
+        .footer-item {
+            font-size: 1rem;
+        }
+    }
+
+    #themes {
+        margin-top: -16rem;
+    }
+
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.card {
+
+
+    .lg-col-2-of-4 {
+
+
+        margin-top: -8rem;
+        margin-bottom: 2rem;
+
+
+
+    }
+}
+
+
+@include respond(xxl) {
+    html {
+        font-size: 35%;
+    }
+
+    .header {
+
+        &__name {
+
+            font-size: 17rem;
+
+        }
+
+        &__job {
+
+            font-size: 5rem;
+
+        }
+
+        &__self-box {
+            height: 40rem;
 
         }
     }
+
 }
+
 
 // @include respond(md) {
 //     font-size: 30%;
@@ -116,59 +195,3 @@
 //     font-size: 62.5%;
 
 // }
-
-@include respond(xxl) {
-    .row {
-        width: 100vw;
-
-        flex-wrap: wrap;
-        margin-top: 10rem;
-
-        .lg-col-2-of-4 {
-            margin-top: -8rem;
-            margin-bottom: 2rem;
-            margin-left: 9rem;
-
-
-        }
-    }
-}
-
-@include respond (lg) {
-    .composition {
-        display: none;
-    }
-}
-
-@include respond(lg) {
-    body {
-        width: 100%;
-        display: flex;
-        border: none;
-        margin: auto;
-
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-
-        main {
-            .large-text {
-                font-size: 3rem;
-                margin-bottom: -7rem;
-                margin-top: -5rem;
-            }
-
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-
-            .profile-box {
-                width: 100%;
-                margin: auto;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-
-    }
-}

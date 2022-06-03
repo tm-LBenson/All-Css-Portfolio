@@ -1,6 +1,7 @@
 .footer {
     height: 20rem;
     background-color: $color-dark-footer;
+    width: 100vw;
 
     &-box {
         @include centeredContainer;
