@@ -852,6 +852,9 @@ a {
     height: 65rem;
   }
 
+  .content {
+    margin-bottom: 45rem;
+  }
   .content .content-box {
     height: 100%;
   }
