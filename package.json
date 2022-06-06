@@ -4,19 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss css/styles.css -w"
+    "compile:sass": "sass sass/main.scss public/stylesheets/style.css -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tigys599/CSS_My-Site.git"
+    "url": "https://github.com/tigys599/start_template.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tigys599/CSS_My-Site/issues"
+    "url": "https://github.com/tigys599/start_template/issues"
   },
-  "homepage": "https://github.com/tigys599/CSS_My-Site#readme",
+  "homepage": "https://github.com/tigys599/start_template#readme",
   "devDependencies": {
     "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
